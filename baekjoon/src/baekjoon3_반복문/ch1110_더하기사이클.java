@@ -14,14 +14,16 @@ public class ch1110_더하기사이클 {
 	
 	int count =0;
 	newNumber = num;
+	
 	while(true) {
-		
 		int a = newNumber/10;
 		int b = newNumber%10;
 		
 		int sum =a+b;
 		newNumber = (b*10)+(sum%10);
+		
 		count ++;
+		
 		if(newNumber==num) {
 			break;
 		}
